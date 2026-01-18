@@ -9,7 +9,7 @@
 ## A. Automatische Installation (Windows) - Empfohlen
 
 1.  Navigieren in diesen Ordner.
-2.  Führen Sie das Skript `setup_windows.bat` (per Doppelklick) aus. 
+2.  Führe das Skript `setup_windows.bat` (per Doppelklick) aus. 
 
 > **Hinweis:** Das Skript prüft automatisch, ob Python 3.11 und CloudCompare installiert sind. Falls nicht, werden sie via `winget` nachgeladen. Anschließend wird die Entwicklungsumgebung (Virtual Environment) automatisch eingerichtet.
 
@@ -45,7 +45,7 @@ Falls das automatische Skript nicht genutzt werden soll:
 ## C. Anleitung für macOS (Apple Silicon / Intel)
 
 1.  **Python 3.11 installieren:**
-    Laden den Installer von [python.org](https://www.python.org/) herunter und führe ihn aus.
+    Lade den Installer von [python.org](https://www.python.org/) herunter und führe ihn aus.
 
 2.  **CloudCompare installieren:**
     Lade die `.dmg` Datei von [cloudcompare.org](https://www.cloudcompare.org/) herunter  oder nutze Homebrew:
