@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scan-to-bim-pipeline"
+version = "1.0.0"
+description = "Eine KI-gestützte Pipeline zur Klassifizierung von Punktwolken (Scan-to-BIM)."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Volker Becker", email = "email@example.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "laspy[lazrs]",   # 'lazrs' für schnellere LAZ-Kompression
+    "scikit-learn",
+    "open3d",
+    "jakteristics",
+    "joblib",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/username/scan-to-bim"
+
+# Optional: Damit du das Programm einfach mit "scan2bim" in der Konsole starten kannst
+[project.scripts]
+scan2bim = "main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]  # Sucht nach Paketen im aktuellen Ordner (src wird oft bevorzugt, aber deine Struktur ist flach/gemischt)
+include = ["src*"] # Inkludiert den src Ordner
