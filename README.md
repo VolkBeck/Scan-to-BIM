@@ -1,17 +1,17 @@
 # Scan-to-BIM Projekt - Installationsanleitung
 
 ## Voraussetzungen
-* [cite_start]**Betriebssystem:** Windows 10/11 [cite: 1] [cite_start]ODER macOS (10.13+) / Linux [cite: 1]
-* [cite_start]**Software:** Python 3.11 [cite: 1] [cite_start]und CloudCompare (zur Visualisierung) [cite: 1]
+* **Betriebssystem:** Windows 10/11 ODER macOS (10.13+) / Linux
+* **Software:** Python 3.11 und CloudCompare (zur Visualisierung)
 
 ---
 
 ## A. Automatische Installation (Windows) - Empfohlen
 
 1.  Navigieren in diesen Ordner.
-2.  [cite_start]Führen Sie das Skript `setup_windows.bat` (per Doppelklick) aus. [cite: 2]
+2.  Führen Sie das Skript `setup_windows.bat` (per Doppelklick) aus. 
 
-> [cite_start]**Hinweis:** Das Skript prüft automatisch, ob Python 3.11 und CloudCompare installiert sind[cite: 3]. Falls nicht, werden sie via `winget` nachgeladen. [cite_start]Anschließend wird die Entwicklungsumgebung (Virtual Environment) automatisch eingerichtet[cite: 4].
+> **Hinweis:** Das Skript prüft automatisch, ob Python 3.11 und CloudCompare installiert sind. Falls nicht, werden sie via `winget` nachgeladen. Anschließend wird die Entwicklungsumgebung (Virtual Environment) automatisch eingerichtet.
 
 ---
 
@@ -23,13 +23,13 @@ Falls das automatische Skript nicht genutzt werden soll:
     ```powershell
     winget install -e --id Python.Python.3.11
     ```
-    [cite: 5]
+    
 
 2.  **CloudCompare installieren:**
     ```powershell
     winget install -e --id CloudCompare.CloudCompare
     ```
-    [cite: 5]
+    
 
 3.  **Projekt einrichten** (in cmd oder PowerShell):
     ```powershell
@@ -38,7 +38,7 @@ Falls das automatische Skript nicht genutzt werden soll:
     pip install --upgrade pip
     pip install -e .
     ```
-    [cite: 5]
+    
 
 ---
 
@@ -48,7 +48,7 @@ Falls das automatische Skript nicht genutzt werden soll:
     Laden den Installer von [python.org](https://www.python.org/) herunter und führe ihn aus.
 
 2.  **CloudCompare installieren:**
-    Lade die `.dmg` Datei von [cloudcompare.org](https://www.cloudcompare.org/) herunter [cite: 6] oder nutze Homebrew:
+    Lade die `.dmg` Datei von [cloudcompare.org](https://www.cloudcompare.org/) herunter  oder nutze Homebrew:
     ```bash
     brew install --cask cloudcompare
     ```
@@ -85,11 +85,11 @@ Falls das automatische Skript nicht genutzt werden soll:
 
 ## E. Starten der Pipeline
 
-[cite_start]Stelle sicher, dass das Environment aktiviert ist (erkennbar am `(scan2bim_env)` vor der Eingabezeile)[cite: 8].
+Stelle sicher, dass das Environment aktiviert ist (erkennbar am `(scan2bim_env)` vor der Eingabezeile).
 
 Starte den Prozess mit:
 ```bash
-python main.py
+python main.py```
 
 
 ---
